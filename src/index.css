@@ -1,13 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.App {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+nav {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.navBtn {
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.linksDiv {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.linksDiv a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.linksDiv a:hover {
+  color: rgb(255, 183, 50);
+  cursor: default;
+}
+.homeBtn {
+  text-decoration: none;
+  color: black;
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+}
+.homeBtn:hover {
+  color: rgb(255, 183, 50);
+  cursor: default;
+}
+.homeDiv {
+  width: 100%;
+}
+.page-one {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.intro {
+  width: 500px;
+  height: 350px;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.intro h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+.intro p {
+  color: gray;
+  font-size: 18px;
+  width: 350px;
+}
+.btn {
+  background-color: rgb(255, 183, 50);
+  color: white;
+  border: 0;
+  border-radius: 15px;
+  font-size: large;
+  padding: 10px 70px 10px 70px;
+}
+.hireBtn {
+  margin-top: 10%;
+}
+
+.btn:hover {
+  background-color: #eee;
+  color: rgb(255, 183, 50);
+}
+.page-one img {
+  width: 600px;
+}
+.page-two {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lineDiv {
+  width: 150px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 183, 50);
+  margin-top: 3%;
+}
+.page-two h1 {
+  margin: 0;
+}
+.page-two h2 {
+  font-size: 30px;
+}
+.logoDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #eee;
+  width: 100%;
+  padding: 20px;
+  margin-top: 2%;
+}
+.project img {
+  width: 100%;
+}
+.react,
+.javascript,
+.html,
+.css {
+  display: flex;
+  margin: 30px;
+}
+.javascript img {
+  margin-right: 5px;
+}
+.lineTwoDiv {
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 183, 50);
+  margin-top: 6%;
+}
+.projectsDiv {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+.project {
+  width: 500px;
+  margin: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px 0 rgba(209, 209, 209, 0.568);
+}
+.project a {
+  cursor: pointer;
+}
+.lineThreeDiv {
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 183, 50);
+  margin-top: 6%;
+}
+.resumeDiv {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resumeDiv a {
+  color: rgb(255, 183, 50);
+  text-decoration: none;
+}
+.resumeDiv a:hover {
+  color: rgb(136, 136, 136);
+}
+footer {
+  width: 100%;
+  background-color: rgb(255, 183, 50);
+}
+.holder {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 183, 50, 0.424);
+  border-radius: 100px;
+}
+footer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+@media (max-width: 1000px) {
+  .imgDiv {
+    width: 500px;
+  }
+  .imgDiv img {
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 40px;
+  }
+  .intro p {
+    font-size: 15px;
+  }
+  .resumeDiv {
+    width: 400px;
+  }
+  .resumeDiv img {
+    width: 100%;
+  }
+  .btn {
+    border-radius: 10px;
+    padding: 7px 50px 7px 50px;
+    font-size: medium;
+  }
+  .hireBtn {
+    margin-top: 7%;
+  }
+}
+@media (max-width: 600px) {
+  .imgDiv {
+    width: 300px;
+  }
+  .imgDiv img {
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+  .intro {
+    margin-top: 8%;
+  }
+  .btn {
+    border-radius: 10px;
+    padding: 5px 35px 5px 35px;
+    font-size: small;
+  }
+  .hireBtn {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 900px) {
+  nav {
+    background-color: rgb(255, 183, 50);
+    padding: 0;
+  }
+  .linksDiv {
+    width: 100%;
+    flex-direction: column;
+  }
+  .homeLink {
+    margin-top: 60px;
+  }
+  .linksDiv a {
+    background-color: rgb(255, 183, 50);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .homeBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  .linksDiv a:hover {
+    color: white;
+  }
+  .homeBtn:hover {
+    color: white;
+  }
+  .navBtn {
+    display: block;
+  }
 }
