@@ -8,23 +8,9 @@ import resume from "./images/resume.JPG";
 import { Link } from "react-scroll";
 import profile from "./images/prof.png";
 import axios, { Axios } from "axios";
-import FileDownload from "js-file-download";
 import ResumePdf from "./Resume.pdf";
 
 const Home = () => {
-  const download = (e) => {
-    e.preventDefault();
-
-    axios({
-      url: "http://localhost:4000",
-      method: "GET",
-      responseType: "blob",
-    }).then((res) => {
-      console.log(res);
-      FileDownload(res.data, "Resume.pdf");
-    });
-  };
-
   return (
     <div className="homeDiv">
       <div className="page-one">
