@@ -39,7 +39,7 @@ nav {
 .linksDiv a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 .linksDiv a:hover {
   color: rgb(255, 183, 50);
@@ -50,7 +50,7 @@ nav {
   color: black;
   border: 0;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 15px;
 }
 .homeBtn:hover {
   color: rgb(255, 183, 50);
