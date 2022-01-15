@@ -236,8 +236,21 @@ footer img {
   .hireBtn {
     margin-top: 7%;
   }
+  .intro {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 6%;
+  }
 }
 @media (max-width: 600px) {
+  .intro {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 6%;
+  }
+  .intro p {
+    width: 100%;
+  }
   .imgDiv {
     width: 300px;
   }
@@ -270,17 +283,18 @@ footer img {
   .linksDiv {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
   .homeLink {
     margin-top: 60px;
   }
   .linksDiv a {
-    background-color: rgb(255, 183, 50);
-    width: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 20px solid rgb(255, 183, 50);
     padding: 5px;
   }
   .homeBtn {
@@ -290,10 +304,10 @@ footer img {
     padding: 5px;
   }
   .linksDiv a:hover {
-    color: white;
+    color: rgb(255, 183, 50);
   }
   .homeBtn:hover {
-    color: white;
+    color: rgb(255, 183, 50);
   }
   .navBtn {
     display: block;
