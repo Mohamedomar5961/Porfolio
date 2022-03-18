@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "./images/img.svg";
 import react from "./images/react.svg";
 import java from "./images/javascript.svg";
@@ -7,10 +7,28 @@ import css from "./images/css.svg";
 import resume from "./images/resume.JPG";
 import { Link } from "react-scroll";
 import profile from "./images/prof.png";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import ResumePdf from "./Resume.pdf";
 
 const Home = () => {
+  const [info, setInfo] = useState([]);
+  const baseUrl = "https://bayut.p.rapidapi.com";
+
+  useEffect(async (url) => {
+    try {
+      const response = await axios.get(baseUrl, {
+        headers: {
+          "x-rapidapi-host": "bayut.p.rapidapi.com",
+          "x-rapidapi-key":
+            "98477eeee0mshf7e2ebf5adab1a3p11e992jsnb4e9ff09b905",
+        },
+      });
+      console.log(response.data);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
   return (
     <div className="homeDiv">
       <div className="page-one">
