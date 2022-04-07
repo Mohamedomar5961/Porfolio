@@ -25,6 +25,10 @@ nav {
   background-color: white;
 }
 
+.hireBtn:hover {
+  cursor: default;
+}
+
 .navBtn {
   display: none;
   position: absolute;
