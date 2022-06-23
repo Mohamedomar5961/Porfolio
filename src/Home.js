@@ -86,6 +86,11 @@ const Home = () => {
         <h1>Projects</h1>
         <div className="projectsDiv">
           <div className="project">
+            <a target="_blank" href="https://nikestore-268.netlify.app/">
+              <img src="https://d33wubrfki0l68.cloudfront.net/626381c0fbbef70008546174/screenshot_2022-04-23-04-34-42-0000.png"></img>
+            </a>
+          </div>
+          <div className="project">
             <a target="_blank" href="https://mohamedsmoothscroll.netlify.app/">
               <img src="https://d33wubrfki0l68.cloudfront.net/61df357fe955de35bf6e9e07/screenshot_2022-01-12-20-11-10-0000.png"></img>
             </a>
@@ -99,9 +104,6 @@ const Home = () => {
             <a target="_blank" href="https://mohamedtopanime-001.netlify.app/">
               <img src="https://d33wubrfki0l68.cloudfront.net/61dcabd3c259a91cf56f408d/screenshot_2022-01-10-21-58-49-0000.png"></img>
             </a>
-          </div>
-          <div className="project">
-            <a target="_blank" href="#"></a>
           </div>
         </div>
         <div id="resume" className="lineThreeDiv"></div>
