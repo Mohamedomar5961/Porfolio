@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
     "js-file-download": "^0.4.12",
-    "react": "^17.0.2",
+    "react": "^18.0.0",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.4",
@@ -20,12 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+  
   "browserslist": {
     "production": [
       ">0.2%",

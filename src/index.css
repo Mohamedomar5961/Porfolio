@@ -1,8 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --main-color: #299489;
+  --dark-main-color: #002d27;
+  --light-main-color: #a9ffff;
+  --old-color: #f9a826;
+  --dark-old-color: #ffb38a;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .App {
   margin: 0;
@@ -10,7 +20,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -46,7 +55,7 @@ nav {
   font-size: 15px;
 }
 .linksDiv a:hover {
-  color: rgb(255, 183, 50);
+  color: var(--main-color);
   cursor: default;
 }
 .homeBtn {
@@ -57,7 +66,7 @@ nav {
   font-size: 15px;
 }
 .homeBtn:hover {
-  color: rgb(255, 183, 50);
+  color: var(--main-color);
   cursor: default;
 }
 .homeDiv {
@@ -88,7 +97,7 @@ nav {
   width: 350px;
 }
 .btn {
-  background-color: rgb(255, 183, 50);
+  background-color: var(--main-color);
   color: white;
   border: 0;
   border-radius: 15px;
@@ -101,7 +110,7 @@ nav {
 
 .btn:hover {
   background-color: #eee;
-  color: rgb(255, 183, 50);
+  color: var(--main-color);
 }
 .page-one img {
   width: 600px;
@@ -117,7 +126,7 @@ nav {
   width: 150px;
   height: 5px;
   border-radius: 5px;
-  background-color: rgb(255, 183, 50);
+  background-color: var(--main-color);
   margin-top: 3%;
 }
 .page-two h1 {
@@ -131,7 +140,7 @@ nav {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #eee;
+  background-color: var(--light-main-color);
   width: 100%;
   padding: 20px;
   margin-top: 2%;
@@ -153,7 +162,7 @@ nav {
   width: 100px;
   height: 5px;
   border-radius: 5px;
-  background-color: rgb(255, 183, 50);
+  background-color: var(--main-color);
   margin-top: 6%;
 }
 .projectsDiv {
@@ -176,7 +185,7 @@ nav {
   width: 100px;
   height: 5px;
   border-radius: 5px;
-  background-color: rgb(255, 183, 50);
+  background-color: var(--main-color);
   margin-top: 6%;
 }
 .resumeDiv {
@@ -186,7 +195,7 @@ nav {
   align-items: center;
 }
 .resumeDiv a {
-  color: rgb(255, 183, 50);
+  color: var(--main-color);
   text-decoration: none;
 }
 .resumeDiv a:hover {
@@ -194,7 +203,7 @@ nav {
 }
 footer {
   width: 100%;
-  background-color: rgb(255, 183, 50);
+  background-color: var(--dark-main-color);
 }
 .holder {
   height: 200px;
@@ -281,7 +290,7 @@ footer img {
 }
 @media (max-width: 900px) {
   nav {
-    background-color: rgb(255, 183, 50);
+    background-color: var(--main-color);
     padding: 0;
   }
   .linksDiv {
@@ -298,7 +307,7 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 20px solid rgb(255, 183, 50);
+    border: 20px solid var(--main-color);
     padding: 5px;
   }
   .homeBtn {
@@ -308,10 +317,10 @@ footer img {
     padding: 5px;
   }
   .linksDiv a:hover {
-    color: rgb(255, 183, 50);
+    color: var(--main-color);
   }
   .homeBtn:hover {
-    color: rgb(255, 183, 50);
+    color: var(--main-color);
   }
   .navBtn {
     display: block;

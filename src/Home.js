@@ -4,11 +4,12 @@ import react from "./images/react.svg";
 import java from "./images/javascript.svg";
 import html from "./images/html.svg";
 import css from "./images/css.svg";
-import resume from "./images/resume.JPG";
+import resume from "./images/Resume-pic.PNG";
 import { Link } from "react-scroll";
 import profile from "./images/prof.png";
 import axios from "axios";
 import ResumePdf from "./Resume.pdf";
+import appleWebsiteImage from "./images/apple-website-3.PNG";
 
 const Home = () => {
   const [info, setInfo] = useState([]);
@@ -53,7 +54,7 @@ const Home = () => {
               exact="true"
               offset={-80}
             >
-              Hire me!
+              Download Resume
             </Link>
           </div>
         </div>
@@ -91,8 +92,11 @@ const Home = () => {
             </a>
           </div>
           <div className="project">
-            <a target="_blank" href="https://mohamedsmoothscroll.netlify.app/">
-              <img src="https://d33wubrfki0l68.cloudfront.net/61df357fe955de35bf6e9e07/screenshot_2022-01-12-20-11-10-0000.png"></img>
+            <a
+              target="_blank"
+              href="https://appleclone-by-mohamedomar.netlify.app/"
+            >
+              <img src={appleWebsiteImage}></img>
             </a>
           </div>
           <div className="project">
